@@ -14,6 +14,7 @@ export default function Footer() {
                 alt="IN DUO Logo"
                 width={40}
                 height={40}
+                priority={false}
                 className="w-10 h-10 rounded-full object-cover"
               />
               <span className="font-black text-primary text-lg">IN DUO</span>

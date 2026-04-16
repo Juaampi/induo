@@ -27,6 +27,7 @@ export default function Navbar() {
                 alt="IN DUO Logo"
                 width={48}
                 height={48}
+                priority={false}
                 className="w-12 h-12 rounded-full object-cover"
               />
               <span className="font-black text-primary text-lg hidden sm:block">IN DUO</span>
