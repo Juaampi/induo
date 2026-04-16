@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { footerLinks, socialLinks } from '../lib/data';
 
 export default function Footer() {
@@ -8,9 +9,13 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-black">
-                ID
-              </div>
+              <Image
+                src="/images/logoinduo.jpg"
+                alt="IN DUO Logo"
+                width={40}
+                height={40}
+                className="w-10 h-10 rounded-full object-cover"
+              />
               <span className="font-black text-primary text-lg">IN DUO</span>
             </div>
             <p className="text-gray-400 text-sm">

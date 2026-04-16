@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Image from 'next/image';
 import { siteContent, socialLinks } from '../lib/data';
 
 export default function Navbar() {
@@ -21,9 +22,13 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#hero" className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-black">
-                ID
-              </div>
+              <Image
+                src="/images/logoinduo.jpg"
+                alt="IN DUO Logo"
+                width={48}
+                height={48}
+                className="w-12 h-12 rounded-full object-cover"
+              />
               <span className="font-black text-primary text-lg hidden sm:block">IN DUO</span>
             </a>
           </div>
